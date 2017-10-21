@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block title %}District{% endblock %}
+
+{% block content %}
+<h2>GMC</h2>
+<p>Add a new <a href="/gmc/add/">GMC</a>.</p>
+{{ facilities|safe }}
+
+<h2>Regions</h2>
+<p>Add a new <a href="/zone/add/">Region</a>.</p>
+{{ regions|safe }}
+
+<h2>Districts</h2>
+<p>Add a new <a href="/zone/add/">District</a>.</p>
+{{ districts|safe }}
+
+
+<h2>Message Log</h2>
+{{ message_pass|safe }}
+
+<h2>Failed Message Log</h2>
+{{ message_fail|safe }}
+
+{% endblock %}
